@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-23T18:59:37 IST" name="Default suite" finished-at="2022-11-23T18:59:44 IST" duration-ms="7120">
+    <groups>
+    </groups>
+    <test started-at="2022-11-23T18:59:37 IST" name="Default test" finished-at="2022-11-23T18:59:44 IST" duration-ms="7120">
+      <class name="AddBooktoLibrary">
+        <test-method signature="addBook(java.lang.String,java.lang.String)[pri:0, instance:AddBooktoLibrary@57cf54e1]" started-at="2022-11-23T18:59:37 IST" name="addBook" data-provider="BookData" finished-at="2022-11-23T18:59:44 IST" duration-ms="6807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[008]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="addBook(java.lang.String,java.lang.String)[pri:0, instance:AddBooktoLibrary@57cf54e1]" started-at="2022-11-23T18:59:44 IST" name="addBook" data-provider="BookData" finished-at="2022-11-23T18:59:44 IST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[009]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- AddBooktoLibrary -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
