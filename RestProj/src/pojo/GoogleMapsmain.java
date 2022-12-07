@@ -17,6 +17,7 @@ public class GoogleMapsmain
 {
 	public static void main(String[] args)
 	{
+		
 		mapsdata mp=new mapsdata();
 		mp.setAccuracy(50);
 		mp.setAddress("29, side layout, cohen 09");
