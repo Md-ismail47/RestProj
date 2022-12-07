@@ -20,6 +20,7 @@ public class GoogleMapsmainSpec
 {
 	public static void main(String[] args)
 	{
+		int a=10;
 		mapsdata mp=new mapsdata();
 		mp.setAccuracy(50);
 		mp.setAddress("29, side layout, cohen 09");
