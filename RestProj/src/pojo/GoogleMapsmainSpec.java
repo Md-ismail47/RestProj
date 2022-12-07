@@ -45,5 +45,4 @@ public class GoogleMapsmainSpec
 		String js1=js.getString("place_id");
 		System.out.println(js1);
 	}
-
 }
