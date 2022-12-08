@@ -6,18 +6,21 @@ import static org.hamcrest.Matchers.equalTo;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.devtools.v85.applicationcache.ApplicationCache;
+
 import groovy.lang.Buildable;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.internal.http.URIBuilder;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 
-public class GoogleMapsmain
+public class GoogleMapsmainSpec
 {
 	public static void main(String[] args)
 	{
-		
+		int a=108;
 		mapsdata mp=new mapsdata();
 		mp.setAccuracy(50);
 		mp.setAddress("29, side layout, cohen 09");
@@ -33,8 +36,9 @@ public class GoogleMapsmain
 		lc.setLat(-38.383494);
 		lc.setLng(33.427362);
 		mp.setLocation(lc);
-		RestAssured.baseURI="https://rahulshettyacademy.com/maps/api/place/add/json";
-		String respose=given().log().all().queryParam("Key", "qaclick123").header("content-Type","application/json")
+		RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/maps/api/place/add/json").addQueryParam("Key", "qaclick123").setContentType(ContentType.JSON).build();
+		RestAssured.baseURI="";
+		String respose=given().log().all().spec(req)
 		.body(mp).when().post()
 		.then().log().all().statusCode(200).body("scope",equalTo("APP")).header("server","Apache/2.4.41 (Ubuntu)").extract().response().asString();
 		System.out.println(respose);
@@ -42,5 +46,4 @@ public class GoogleMapsmain
 		String js1=js.getString("place_id");
 		System.out.println(js1);
 	}
-
 }
