@@ -12,7 +12,7 @@ public class Oauth2
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\ycs\\eclipse-workspace\\ResTassured\\RestProj\\Drivers\\chromedriver.exe");  
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\ycs\\git\\RestAssuredProject\\RestAssuredProject\\RestProj\\Drivers\\chromedriver.exe");  
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https%3A%2F%2Frahulshettyacademy.com%2FgetCourse.php&service=lso&o2v=2&flowName=GeneralOAuthFlow");
