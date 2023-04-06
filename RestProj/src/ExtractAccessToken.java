@@ -10,7 +10,7 @@ public class ExtractAccessToken
 	public static String AccessToken()
 	{
 		String username="devbox435@test.co";
-		String password="Qwerty@123";
+		String password="Qwerty@1234";
 		String granttype="password";
 		String clientSecret="D6996A5F20AB488DF0E382B95EB9A42D30BED50E5F836D228ECDC5677B4D8C4F";
 		String clientId="3MVG9fe4g9fhX0E5_WrFL9oA6pLgiCeEJAnieXyDxy1NoTF68DtiJyMEKRuFYtgf_Zo0ySKt3ZfEEQrd2QbVI";
