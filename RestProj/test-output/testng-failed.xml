@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Jira.GetIssueDetails">
+      <class name="pojo.Vt_Class5">
         <methods>
-          <include name="addAttachment"/>
+          <include name="VTselectnewpaymentmethod"/>
         </methods>
-      </class> <!-- Jira.GetIssueDetails -->
+      </class> <!-- pojo.Vt_Class5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
